@@ -1,0 +1,17 @@
+$TTL 86400
+@       IN      SOA     cobbler.local. admin.local (
+             3         ; Serial
+             604800     ; Refresh
+             86400     ; Retry
+             2419200     ; Expire
+             604800    ; Negative Cache TTL
+)
+; name servers - NS records
+    IN      NS      cobbler.local.
+
+; name servers - A records
+cobbler.local.          IN      A       172.16.0.99
+
+; 172.16.0.0/24 - A records
+salt-master.local.      IN      A       172.16.0.100
+minion-01.local.        IN      A       172.16.0.110

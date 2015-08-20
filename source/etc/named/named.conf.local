@@ -1,0 +1,8 @@
+zone "local" {
+    type master;
+    file "/etc/named/zones/db.local"; # zone file path
+};
+zone "0.16.172.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/db.172.16.0";  # 172.16.0.0/24 subnet
+    };
